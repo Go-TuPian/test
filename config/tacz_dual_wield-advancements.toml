@@ -1,0 +1,16 @@
+
+#進捗の銃分類を補う設定です。判定にはサーバー側の値を使用します。
+#銃IDは名前空間を含む形式（例: tacz:minigun）で指定してください。
+#二丁持ち・クイックドロー自体の許可設定は変更しません。
+[classification]
+	#SEMI射撃モードでも半自動機構ではないショットガンを除外します。
+	#初期値は標準・確認済み追加パックの中折れ式です。弾倉形式の制限や許可ID一覧ではありません。
+	excludedSemiAutomaticShotgunGunIds = ["tacz:db_long", "tacz:db_short", "create_armorer:shotgun_db_stone", "re:hydra"]
+	#ミニガンとして扱う銃IDです。通常のマシンガン全般には適用しません。
+	minigunGunIds = ["tacz:minigun"]
+	#RPG・ランチャー分類以外で、重火器として扱う銃IDを追加します。
+	additionalHeavyWeaponGunIds = []
+	#重火器から除外する銃IDです。RPG分類・追加IDよりも優先します。
+	#初期値はRPG分類を流用していることを確認した近接武器と拳銃です。
+	excludedHeavyWeaponGunIds = ["create_armorer:special_melee_wrench", "bo6:handcannon"]
+

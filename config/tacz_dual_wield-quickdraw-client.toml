@@ -1,0 +1,49 @@
+
+#First-person pose of the primary weapon held in the left arm. Units: blocks and degrees.
+#The original gun-pack support-hand contact point is preserved. Both the gun and its support hand move together.
+#Alpha10 uses cradle_v5: positions refer to the ORIGINAL LEFT SUPPORT PALM, not the trigger grip. Old cradle_v4 values are not used.
+[cradle_v5]
+	#Horizontal position of the support palm. Negative values move it left.
+	#Range: -3.0 ~ 3.0
+	x = -0.42
+	#Vertical position of the support palm. Negative values move it down.
+	#Range: -3.0 ~ 3.0
+	y = -0.42
+	#Depth of the support palm. Larger values move it closer to the camera.
+	#Range: -3.0 ~ 3.0
+	z = -0.72
+	#Pitch of the barrel, in degrees.
+	#Range: -180.0 ~ 180.0
+	pitch = -10.0
+	#Yaw of the barrel toward the left side of the screen, in degrees.
+	#Range: -180.0 ~ 180.0
+	yaw = 55.0
+	#Roll in camera space. This changes the diagonal direction on screen.
+	#Range: -180.0 ~ 180.0
+	roll = -20.0
+	#Bank around the local barrel axis AFTER yaw and pitch, in degrees.
+	#This lays the weapon sideways without moving the support hand to a different part of the gun. Positive values use the reference-image bank direction. Set 0 to disable the extra bank.
+	#Range: -180.0 ~ 180.0
+	cant = 55.0
+	#Uniform display scale. The gun model is never mirrored.
+	#Range: 0.25 ~ 2.0
+	scale = 0.85
+
+#Hip-fire offset of the right-hand sidearm. These offsets fade to zero during ADS.
+[sidearm]
+	#Horizontal hip-fire offset.
+	#Range: -1.0 ~ 1.0
+	x = 0.04
+	#Vertical hip-fire offset.
+	#Range: -1.0 ~ 1.0
+	y = -0.02
+	#Depth hip-fire offset.
+	#Range: -1.0 ~ 1.0
+	z = 0.0
+
+#Transition timing for the primary weapon. At 20 TPS, 20 ticks equal one second.
+[animation]
+	#Duration of the primary weapon's transition into and out of the held pose.
+	#Range: 1 ~ 40
+	transition_ticks = 6
+

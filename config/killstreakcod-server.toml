@@ -1,0 +1,1738 @@
+
+#对本实例所有世界生效；联机使用服务端配置。
+#Global rules; multiplayer uses the hosting server.
+[earning]
+	#按得分而非击杀获取奖励；切换时保留库存、清空未完成进度。
+	#Default: false
+	scorestreaks = false
+	#开启后独立循环累计且死亡不清进度；关闭后每条命每种奖励只自然获取一次。
+	#Default: true
+	repeatableRewards = false
+	#只计敌对生物、Boss 和敌方玩家；关闭后其他非友军生物也可计数。
+	#Default: true
+	hostileKillsOnly = false
+
+[rewards]
+	#是否允许获取与使用核弹，默认关闭。
+	#Default: false
+	mgbEnabled = false
+	#是否允许获取与使用无畏战甲，默认关闭。
+	#Default: false
+	juggernautEnabled = false
+	#核弹是否伤害呼叫者及其队友；默认关闭，遵循计分板队伍和本世界队友白名单。Nuclear friendly fire, including the caller; disabled by default.
+	#Default: false
+	mgbFriendlyDamage = false
+
+[research]
+	#是否启用总部终端研究与预付材料系统。关闭后所有玩家直接使用连杀模式，且不应用任何升级；既有研究保留。
+	#Default: true
+	terminalEnabled = false
+	#禁用升级研究、装配及效果，保留已保存的研究与装配选择。
+	#Default: false
+	disableUpgrades = true
+
+[airspace]
+	#是否检查航线与机体上下三格空间并自动抬升，默认关闭；关闭不改变地狱禁飞规则。
+	#Default: false
+	airspaceChecks = true
+	#炮艇遥控地面区块观察半径，单位为区块。
+	#Gunship ground watch radius in chunks.
+	#Range: 16 ~ 32
+	gunshipViewDistance = 32
+
+#武器基础伤害，1 点为半颗心；0 可关闭该武器的伤害。
+#Base damage before armour and explosion falloff; one point is half a heart. Zero disables damage.
+[damage]
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	bombDrone = 32.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	clusterMine = 35.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	mortar = 64.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	precisionAirstrike = 24.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	cruiseMissile = 180.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	sae = 240.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	sentryGun = 3.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	wheelsonCannon = 6.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	wheelsonSplash = 8.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	overwatchHelo = 3.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	vtolCannon = 3.5
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	vtolRocket = 55.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	vtolHerculesCannon = 8.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	vtolHerculesSplash = 12.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	stealthBomber = 100.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	chopperCannon = 14.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	chopperSplash = 20.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	chopperRocket = 60.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	gunship25mm = 8.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	gunship25mmSplash = 12.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	gunship40mm = 45.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	gunship105mm = 100.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	guidedRocket = 55.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	m134 = 8.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	mgb = 100000.0
+	#基础伤害；研究加成、爆炸衰减及自动攻击变体沿用原有比例。
+	#Base damage; existing modifiers still apply.
+	#Range: 0.0 ~ 1000000.0
+	lodestarMissile = 120.0
+
+[targeting]
+	#将所有生物视为敌对目标；玩家队友、白名单及所属单位仍受保护。Affects targeting and kill credit; allies remain protected.
+	#Default: false
+	allMobsHostile = false
+	#额外敌对实体注册名，最多64种、总长1024字符；不存在的类型会保留，便于兼容可选模组。
+	#Extra hostile entity registry IDs; at most 64 types and 1024 characters. Allies remain protected.
+	#Example: ["minecraft:cow", "othermod:creature"]
+	hostileEntityTypes = []
+
+#地形破坏需同时打开全局及单项开关，默认关闭。
+#Both global and per-streak switches are required.
+[terrain]
+	#允许连杀破坏地形；仍受领地/爆炸事件限制。
+	#Default: false
+	enabled = false
+
+[streaks]
+
+	[streaks.uav]
+		#是否允许获取及使用此连杀。
+		#Default: true
+		enabled = true
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 4
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 4
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 500
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.bomb_drone]
+		#是否允许获取及使用此连杀。
+		#Default: true
+		enabled = true
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 4
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 4
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 500
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.counter_uav]
+		#是否允许获取及使用此连杀。
+		#Default: true
+		enabled = true
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 5
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 5
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 625
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.cluster_mine]
+		#是否允许获取及使用此连杀。
+		#Default: true
+		enabled = true
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 5
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 5
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 625
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.care_package]
+		#是否允许获取及使用此连杀。
+		#Default: true
+		enabled = true
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 5
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 5
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 625
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.precision_airstrike]
+		#是否允许获取及使用此连杀。
+		#Default: true
+		enabled = true
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 6
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 6
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 750
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.cruise_missile]
+		#是否允许获取及使用此连杀。
+		#Default: true
+		enabled = true
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 6
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 6
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 750
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.mortar_strike]
+		#是否允许获取及使用此连杀。
+		#Default: true
+		enabled = true
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 6
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 6
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 750
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.sentry_gun]
+		#是否允许获取及使用此连杀。
+		#Default: true
+		enabled = true
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 7
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 7
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 875
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.sae]
+		#是否允许获取及使用此连杀。
+		#Default: true
+		enabled = true
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 7
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 7
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 875
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.vtol_jet]
+		#是否允许获取及使用此连杀。
+		#Default: true
+		enabled = true
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 8
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 8
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 1000
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.overwatch_helo]
+		#是否允许获取及使用此连杀。
+		#Default: true
+		enabled = true
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 8
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 8
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 1000
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.wheelson_hs]
+		#是否允许获取及使用此连杀。
+		#Default: true
+		enabled = true
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 8
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 8
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 1000
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.stealth_bomber]
+		#是否允许获取及使用此连杀。
+		#Default: true
+		enabled = true
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 10
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 10
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 1250
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.chopper_gunner]
+		#是否允许获取及使用此连杀。
+		#Default: true
+		enabled = true
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 10
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 10
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 1250
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.emergency_airdrop]
+		#是否允许获取及使用此连杀。
+		#Default: true
+		enabled = true
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 10
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 10
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 1250
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.lodestar]
+		#是否允许获取及使用此连杀。
+		#Default: true
+		enabled = true
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 10
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 10
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 1250
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.gunship]
+		#是否允许获取及使用此连杀。
+		#Default: true
+		enabled = true
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 12
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 12
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 1500
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.advanced_uav]
+		#是否允许获取及使用此连杀。
+		#Default: true
+		enabled = true
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 12
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 12
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 1500
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.juggernaut]
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 15
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 15
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 1875
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+	[streaks.mgb]
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		playerKills = 30
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 10000
+		mobKills = 30
+		#玩家/生物击杀按比例合并；分数模式使用 score。
+		#Mixed kills combine proportionally; score mode uses score.
+		#Range: 1 ~ 1000000
+		score = 3750
+		#此连杀可否破坏地形；需同时启用 terrain.enabled。
+		#Default: false
+		terrainDamage = false
+
+#遥控类连杀可操控时间，单位秒；修改后新呼叫生效。
+#Remote control duration in seconds; applies to newly called rewards.
+[remoteDurations]
+	#滞留时间（秒），范围 5 至 3600。
+	#Control time in seconds: 5–3600.
+	#Range: 5 ~ 3600
+	bomb_drone = 30
+	#滞留时间（秒），范围 5 至 3600。
+	#Control time in seconds: 5–3600.
+	#Range: 5 ~ 3600
+	cruise_missile = 15
+	#滞留时间（秒），范围 5 至 3600。
+	#Control time in seconds: 5–3600.
+	#Range: 5 ~ 3600
+	wheelson_hs = 120
+	#滞留时间（秒），范围 5 至 3600。
+	#Control time in seconds: 5–3600.
+	#Range: 5 ~ 3600
+	chopper_gunner = 60
+	#滞留时间（秒），范围 5 至 3600。
+	#Control time in seconds: 5–3600.
+	#Range: 5 ~ 3600
+	lodestar = 60
+	#滞留时间（秒），范围 5 至 3600。
+	#Control time in seconds: 5–3600.
+	#Range: 5 ~ 3600
+	gunship = 60
+
+#无限滞空开关，默认关闭；启用后忽略对应 remoteDurations 秒数。
+#Unlimited control time, disabled by default; overrides remoteDurations for new call-ins.
+[remoteUnlimited]
+	#启用后无限滞空，忽略对应秒数；仍可退出或被击毁。
+	#Unlimited control overrides the duration; manual exit and destruction still apply.
+	bomb_drone = false
+	#启用后无限滞空，忽略对应秒数；仍可退出或被击毁。
+	#Unlimited control overrides the duration; manual exit and destruction still apply.
+	cruise_missile = false
+	#启用后无限滞空，忽略对应秒数；仍可退出或被击毁。
+	#Unlimited control overrides the duration; manual exit and destruction still apply.
+	wheelson_hs = false
+	#启用后无限滞空，忽略对应秒数；仍可退出或被击毁。
+	#Unlimited control overrides the duration; manual exit and destruction still apply.
+	chopper_gunner = false
+	#启用后无限滞空，忽略对应秒数；仍可退出或被击毁。
+	#Unlimited control overrides the duration; manual exit and destruction still apply.
+	lodestar = false
+	#启用后无限滞空，忽略对应秒数；仍可退出或被击毁。
+	#Unlimited control overrides the duration; manual exit and destruction still apply.
+	gunship = false
+
+#材料格式为 注册名=数量；空列表表示不消耗材料。升级项目仅配置研究费用。
+#Materials use registry_id=count. Empty lists are free. Upgrades have research costs only.
+[researchCosts]
+
+	[researchCosts.uav]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=5", "minecraft:iron_ingot=10"]
+
+	[researchCosts.uav_xray]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 10
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:spectral_arrow=15"]
+
+	[researchCosts.uav_ender]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 30
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:ender_pearl=16", "minecraft:ender_eye=8"]
+
+	[researchCosts.uav_endurance]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 5
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=16", "minecraft:repeater=2"]
+
+	[researchCosts.counter_uav]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=5", "minecraft:iron_ingot=10", "minecraft:redstone_torch=3"]
+
+	[researchCosts.counter_uav_assault]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 10
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_torch=8", "minecraft:fermented_spider_eye=8"]
+
+	[researchCosts.counter_uav_sonic]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 30
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:sculk_shrieker=5", "minecraft:scute=5"]
+
+	[researchCosts.counter_uav_endurance]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 5
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=16", "minecraft:repeater=2"]
+
+	[researchCosts.advanced_uav]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=10", "minecraft:iron_ingot=20", "minecraft:diamond=10"]
+
+	[researchCosts.advanced_uav_nowhere]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 30
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:spectral_arrow=64", "minecraft:redstone=32"]
+
+	[researchCosts.advanced_uav_watcher]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 45
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:end_crystal=5", "minecraft:nether_star=1"]
+
+	[researchCosts.advanced_uav_ender]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 10
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:ender_pearl=16", "minecraft:ender_eye=8"]
+
+	[researchCosts.advanced_uav_endurance]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 5
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=16", "minecraft:repeater=2"]
+
+	[researchCosts.bomb_drone]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=10", "minecraft:iron_ingot=15", "minecraft:gunpowder=5"]
+
+	[researchCosts.bomb_drone_charge]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 10
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:gunpowder=16", "minecraft:glowstone_dust=8"]
+
+	[researchCosts.bomb_drone_poison]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 30
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:spider_eye=32", "minecraft:glowstone_dust=16"]
+
+	[researchCosts.bomb_drone_endurance]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 5
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=16", "minecraft:repeater=2"]
+
+	[researchCosts.cluster_mine]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=10", "minecraft:iron_ingot=15", "minecraft:gunpowder=20"]
+
+	[researchCosts.cluster_mine_charge]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 10
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:gunpowder=16", "minecraft:glowstone_dust=8"]
+
+	[researchCosts.cluster_mine_split]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 30
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:gunpowder=16", "minecraft:slime_ball=8"]
+
+	[researchCosts.cluster_mine_extra]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 5
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:iron_ingot=10", "minecraft:gunpowder=10"]
+
+	[researchCosts.care_package]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=15", "minecraft:iron_ingot=30", "minecraft:coal=5"]
+
+	[researchCosts.care_package_luck]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 10
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:emerald=16", "minecraft:gold_ingot=8"]
+
+	[researchCosts.care_package_teleport]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 30
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:ender_pearl=16", "minecraft:ender_eye=16"]
+
+	[researchCosts.care_package_fast]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 5
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:sugar=8"]
+
+	[researchCosts.overwatch_helo]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=16", "minecraft:iron_block=16", "minecraft:gunpowder=32"]
+
+	[researchCosts.overwatch_helo_scout]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 10
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=10", "minecraft:iron_ingot=10"]
+
+	[researchCosts.overwatch_helo_supply]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 30
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=16", "minecraft:iron_ingot=30", "minecraft:coal=10"]
+
+	[researchCosts.overwatch_helo_endurance]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 5
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=5", "minecraft:repeater=10"]
+
+	[researchCosts.emergency_airdrop]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=45", "minecraft:iron_block=10", "minecraft:coal=15"]
+
+	[researchCosts.emergency_airdrop_luck]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 10
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:emerald=16", "minecraft:gold_ingot=8"]
+
+	[researchCosts.emergency_airdrop_teleport]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 30
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:ender_pearl=16", "minecraft:ender_eye=16"]
+
+	[researchCosts.emergency_airdrop_escort]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 45
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=16", "minecraft:iron_block=16", "minecraft:gunpowder=32"]
+
+	[researchCosts.emergency_airdrop_fast]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 5
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:sugar=8"]
+
+	[researchCosts.sentry_gun]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=25", "minecraft:iron_ingot=25", "minecraft:gunpowder=16"]
+
+	[researchCosts.sentry_gun_continuous]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 10
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:gunpowder=16", "minecraft:repeater=8"]
+
+	[researchCosts.sentry_gun_heavy]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 30
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:gunpowder=32", "minecraft:glowstone_dust=16"]
+
+	[researchCosts.sentry_gun_endurance]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 5
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=16", "minecraft:repeater=2"]
+
+	[researchCosts.precision_airstrike]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=8", "minecraft:iron_block=8", "minecraft:gunpowder=32"]
+
+	[researchCosts.precision_airstrike_crossfire]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 10
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:iron_block=8", "minecraft:gunpowder=32"]
+
+	[researchCosts.precision_airstrike_smart]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 30
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:repeater=16", "minecraft:sculk_sensor=8", "minecraft:ender_eye=8"]
+
+	[researchCosts.precision_airstrike_overload]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 5
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:gunpowder=16", "minecraft:glowstone_dust=8"]
+
+	[researchCosts.mortar_strike]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=8", "minecraft:iron_ingot=16", "minecraft:gunpowder=64"]
+
+	[researchCosts.mortar_strike_extra]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 5
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:iron_ingot=8", "minecraft:gunpowder=16"]
+
+	[researchCosts.mortar_strike_second_sun]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 10
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:iron_ingot=24", "minecraft:gunpowder=48"]
+
+	[researchCosts.mortar_strike_bunker]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 30
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:diamond=16", "minecraft:netherite_scrap=1"]
+
+	[researchCosts.sae]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=16", "minecraft:iron_block=24", "minecraft:gunpowder=128"]
+
+	[researchCosts.sae_squadron]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 5
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:iron_block=16", "minecraft:gunpowder=32", "minecraft:redstone_block=8"]
+
+	[researchCosts.sae_charge]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 10
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:gunpowder=32", "minecraft:iron_ingot=32"]
+
+	[researchCosts.sae_chemical]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 30
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:spider_eye=32", "minecraft:wither_skeleton_skull=1", "minecraft:pufferfish=8"]
+
+	[researchCosts.vtol_jet]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=16", "minecraft:iron_block=16", "minecraft:gunpowder=32"]
+
+	[researchCosts.vtol_jet_endurance]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 5
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=5", "minecraft:repeater=10", "minecraft:iron_block=5"]
+
+	[researchCosts.vtol_jet_fire_control]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 10
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:amethyst_shard=16", "minecraft:gold_ingot=16", "minecraft:redstone_block=8"]
+
+	[researchCosts.vtol_jet_hercules]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 30
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:gunpowder=64", "minecraft:end_crystal=8", "minecraft:netherite_ingot=8"]
+
+	[researchCosts.stealth_bomber]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=20", "minecraft:iron_block=25", "minecraft:gunpowder=64"]
+
+	[researchCosts.stealth_bomber_special_ops]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 5
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=25", "minecraft:iron_block=30", "minecraft:gunpowder=96"]
+
+	[researchCosts.stealth_bomber_overpressure]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 10
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:gunpowder=128", "minecraft:glowstone_dust=64", "minecraft:redstone=64"]
+
+	[researchCosts.stealth_bomber_homing]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 30
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:amethyst_shard=32", "minecraft:sculk_sensor=16"]
+
+	[researchCosts.stealth_bomber_dark]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 45
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:end_crystal=5", "minecraft:sculk_shrieker=5", "minecraft:nether_star=1"]
+
+	[researchCosts.juggernaut]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:iron_block=64", "minecraft:gunpowder=256"]
+
+	[researchCosts.cruise_missile]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:iron_ingot=64", "minecraft:gunpowder=64", "minecraft:redstone=64", "minecraft:amethyst_shard=16", "minecraft:copper_ingot=16"]
+
+	[researchCosts.cruise_missile_endurance]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 5
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=16", "minecraft:repeater=2"]
+
+	[researchCosts.cruise_missile_hellfire]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 10
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:iron_ingot=32", "minecraft:gunpowder=32"]
+
+	[researchCosts.cruise_missile_charge]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 30
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:gunpowder=64", "minecraft:glowstone_dust=32"]
+
+	[researchCosts.wheelson_hs]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:iron_ingot=32", "minecraft:gunpowder=32", "minecraft:redstone=32", "minecraft:amethyst_shard=16", "minecraft:copper_ingot=16"]
+
+	[researchCosts.wheelson_hs_endurance]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 5
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=16", "minecraft:repeater=2"]
+
+	[researchCosts.wheelson_hs_armor]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 10
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:diamond=16", "minecraft:netherite_scrap=1"]
+
+	[researchCosts.wheelson_hs_patrol]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 30
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:sculk_sensor=4", "minecraft:gold_ingot=8", "minecraft:redstone=16", "minecraft:lapis_lazuli=16", "minecraft:amethyst_shard=16"]
+
+	[researchCosts.chopper_gunner]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=16", "minecraft:iron_block=16", "minecraft:gunpowder=64"]
+
+	[researchCosts.chopper_gunner_endurance]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 5
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=16", "minecraft:repeater=2"]
+
+	[researchCosts.chopper_gunner_armor]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 10
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:diamond=32", "minecraft:netherite_scrap=2"]
+
+	[researchCosts.chopper_gunner_shadow]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 30
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:spectral_arrow=64", "minecraft:redstone=32", "minecraft:iron_ingot=32", "minecraft:gunpowder=32", "minecraft:gold_ingot=32"]
+
+	[researchCosts.chopper_gunner_charlie]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 45
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:sculk_shrieker=5", "minecraft:scute=5", "minecraft:netherite_ingot=5", "minecraft:gunpowder=256", "minecraft:nether_star=1"]
+
+	[researchCosts.gunship]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=32", "minecraft:iron_block=48", "minecraft:gunpowder=256"]
+
+	[researchCosts.gunship_endurance]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 5
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=8", "minecraft:repeater=32"]
+
+	[researchCosts.gunship_armor]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 10
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:diamond_block=8", "minecraft:netherite_ingot=2"]
+
+	[researchCosts.gunship_coordination]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 30
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:amethyst_shard=64", "minecraft:copper_block=16", "minecraft:gold_block=16", "minecraft:iron_block=16", "minecraft:gunpowder=64"]
+
+	[researchCosts.gunship_iron_maiden]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 45
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:sculk_shrieker=10", "minecraft:scute=5", "minecraft:netherite_ingot=10", "minecraft:gunpowder=512", "minecraft:iron_ingot=128", "minecraft:redstone=128", "minecraft:amethyst_shard=64", "minecraft:copper_ingot=64", "minecraft:nether_star=1"]
+
+	[researchCosts.mgb]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:beacon=4"]
+
+	[researchCosts.lodestar]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=24", "minecraft:iron_block=32", "minecraft:gunpowder=128"]
+
+[usageCosts]
+
+	[usageCosts.uav]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=3"]
+
+	[usageCosts.counter_uav]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=3"]
+
+	[usageCosts.advanced_uav]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=5"]
+
+	[usageCosts.bomb_drone]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=3", "minecraft:iron_ingot=5", "minecraft:gunpowder=3"]
+
+	[usageCosts.cluster_mine]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=3", "minecraft:iron_ingot=7", "minecraft:gunpowder=4"]
+
+	[usageCosts.care_package]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=5", "minecraft:coal=5"]
+
+	[usageCosts.overwatch_helo]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=5", "minecraft:gunpowder=16"]
+
+	[usageCosts.emergency_airdrop]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=15", "minecraft:coal=15"]
+
+	[usageCosts.sentry_gun]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=10", "minecraft:gunpowder=16"]
+
+	[usageCosts.precision_airstrike]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=3", "minecraft:gunpowder=16"]
+
+	[usageCosts.mortar_strike]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:iron_ingot=8", "minecraft:gunpowder=32"]
+
+	[usageCosts.sae]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=4", "minecraft:gunpowder=32"]
+
+	[usageCosts.vtol_jet]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=5", "minecraft:gunpowder=16"]
+
+	[usageCosts.stealth_bomber]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=10", "minecraft:gunpowder=32"]
+
+	[usageCosts.juggernaut]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=16", "minecraft:iron_block=32", "minecraft:gunpowder=128"]
+
+	[usageCosts.cruise_missile]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:iron_ingot=16", "minecraft:gunpowder=16", "minecraft:redstone=16", "minecraft:amethyst_shard=4", "minecraft:copper_ingot=4"]
+
+	[usageCosts.wheelson_hs]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:gunpowder=8", "minecraft:redstone=8"]
+
+	[usageCosts.chopper_gunner]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=5", "minecraft:gunpowder=32"]
+
+	[usageCosts.gunship]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=16", "minecraft:gunpowder=128"]
+
+	[usageCosts.mgb]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:beacon=1", "minecraft:diamond=32"]
+
+	[usageCosts.lodestar]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=8", "minecraft:gunpowder=64"]
+
+[repairCosts]
+
+	[repairCosts.uav]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=3", "minecraft:iron_ingot=1"]
+
+	[repairCosts.counter_uav]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=3", "minecraft:iron_ingot=1", "minecraft:redstone_torch=1"]
+
+	[repairCosts.advanced_uav]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=5", "minecraft:iron_ingot=10", "minecraft:diamond=1"]
+
+	[repairCosts.bomb_drone]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=3", "minecraft:iron_ingot=5", "minecraft:gunpowder=3"]
+
+	[repairCosts.cluster_mine]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=3", "minecraft:iron_ingot=7", "minecraft:gunpowder=4"]
+
+	[repairCosts.care_package]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=5", "minecraft:coal=5"]
+
+	[repairCosts.overwatch_helo]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=5", "minecraft:iron_block=5", "minecraft:gunpowder=16"]
+
+	[repairCosts.emergency_airdrop]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=15", "minecraft:coal=15"]
+
+	[repairCosts.sentry_gun]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone=10", "minecraft:iron_ingot=10", "minecraft:gunpowder=16"]
+
+	[repairCosts.precision_airstrike]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=3", "minecraft:gunpowder=16"]
+
+	[repairCosts.mortar_strike]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:iron_ingot=8", "minecraft:gunpowder=32"]
+
+	[repairCosts.sae]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=4", "minecraft:gunpowder=32"]
+
+	[repairCosts.vtol_jet]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=5", "minecraft:iron_block=5", "minecraft:gunpowder=16"]
+
+	[repairCosts.stealth_bomber]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=10", "minecraft:iron_block=10", "minecraft:gunpowder=32"]
+
+	[repairCosts.juggernaut]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=16", "minecraft:iron_block=32", "minecraft:gunpowder=128"]
+
+	[repairCosts.cruise_missile]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:iron_ingot=16", "minecraft:gunpowder=16", "minecraft:redstone=16", "minecraft:amethyst_shard=4", "minecraft:copper_ingot=4"]
+
+	[repairCosts.wheelson_hs]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:iron_ingot=8", "minecraft:gunpowder=8", "minecraft:redstone=8", "minecraft:amethyst_shard=4", "minecraft:copper_ingot=4"]
+
+	[repairCosts.chopper_gunner]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=5", "minecraft:iron_block=5", "minecraft:gunpowder=32"]
+
+	[repairCosts.gunship]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=16", "minecraft:iron_block=24", "minecraft:gunpowder=128"]
+
+	[repairCosts.mgb]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:beacon=1", "minecraft:diamond=32"]
+
+	[repairCosts.lodestar]
+		#消耗经验等级；0 表示不扣经验。
+		#Experience levels spent.
+		#Range: 0 ~ 1000000
+		levels = 0
+		#最多16种材料；每项格式 minecraft:iron_ingot=5。
+		#Up to 16 registry_id=count entries.
+		materials = ["minecraft:redstone_block=8", "minecraft:iron_block=16", "minecraft:gunpowder=64"]
+

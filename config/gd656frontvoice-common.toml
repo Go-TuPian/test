@@ -1,0 +1,76 @@
+
+[audio]
+	#Master server switch for broadcasting audio cues.
+	serverEnabled = true
+	#Master gain multiplier applied to all server broadcasts.
+	#Range: 0.0 ~ 4.0
+	serverMasterVolume = 1.0
+
+[debug]
+	#Whether common-side debug logs should be printed.
+	enableCommonLogging = false
+	#Whether to log imported audio manifest summary during startup.
+	logManifestSummary = true
+
+[hud]
+	#Cooldown in seconds between quick message sends via the radial HUD. Set to 0 to disable.
+	#Range: 0.0 ~ 60.0
+	chatCooldownSeconds = 3.0
+	#Whether to allow players to use custom quick wheel messages. When disabled, custom extension slots appear dark gray on the client.
+	allowCustomMessages = true
+	#Master switch for the quick chat radial HUD. When disabled, all slot labels appear dark gray and cannot be clicked.
+	enableQuickChat = true
+
+[supply]
+	#Ammo Box refill amount for pistol-type TACZ weapons.
+	#Range: 0 ~ 1000
+	ammoBoxPistolRefill = 60
+	#Ammo Box refill amount for SMG-type TACZ weapons.
+	#Range: 0 ~ 1000
+	ammoBoxSmgRefill = 120
+	#Ammo Box refill amount for rifle-type TACZ weapons.
+	#Range: 0 ~ 1000
+	ammoBoxRifleRefill = 90
+	#Ammo Box refill amount for shotgun-type TACZ weapons.
+	#Range: 0 ~ 1000
+	ammoBoxShotgunRefill = 30
+	#Ammo Box refill amount for sniper-type TACZ weapons.
+	#Range: 0 ~ 1000
+	ammoBoxSniperRefill = 30
+	#Ammo Box refill amount for machine-gun-type TACZ weapons.
+	#Range: 0 ~ 1000
+	ammoBoxMgRefill = 150
+	#Ammo Box refill amount for RPG-type TACZ weapons.
+	#Range: 0 ~ 1000
+	ammoBoxRpgRefill = 4
+	#Ammo Bag refill amount for pistol-type TACZ weapons.
+	#Range: 0 ~ 1000
+	ammoBagPistolRefill = 50
+	#Ammo Bag refill amount for SMG-type TACZ weapons.
+	#Range: 0 ~ 1000
+	ammoBagSmgRefill = 50
+	#Ammo Bag refill amount for rifle-type TACZ weapons.
+	#Range: 0 ~ 1000
+	ammoBagRifleRefill = 50
+	#Ammo Bag refill amount for shotgun-type TACZ weapons.
+	#Range: 0 ~ 1000
+	ammoBagShotgunRefill = 20
+	#Ammo Bag refill amount for sniper-type TACZ weapons.
+	#Range: 0 ~ 1000
+	ammoBagSniperRefill = 20
+	#Ammo Bag refill amount for machine-gun-type TACZ weapons.
+	#Range: 0 ~ 1000
+	ammoBagMgRefill = 50
+	#Ammo Bag refill amount for RPG-type TACZ weapons.
+	#Range: 0 ~ 1000
+	ammoBagRpgRefill = 1
+	#Maximum number of different weapons that an Ammo Box will refill per use.
+	#Range: 1 ~ 10
+	ammoBoxMaxWeapons = 3
+	#Cooldown in seconds for using an Ammo Box (per player per box).
+	#Range: 1 ~ 300
+	ammoBoxCooldownSeconds = 30
+	#Cooldown in seconds for using a Medical Box (per player per box).
+	#Range: 1 ~ 300
+	medBoxCooldownSeconds = 30
+

@@ -1,0 +1,11 @@
+
+[display]
+	#X position of the game GUI. Negative goes left, positive goes right. Default is 20.
+	#Range: > -2147483648
+	guiXPosition = 20
+	#Y position of the game GUI. Negative goes up, positive goes down. Default is 60.
+	#Range: > -2147483648
+	guiYPosition = 60
+	#For a more realistic experience, you can choose to disable the game GUI and any on screen reminders (drawing from the deck, turn reminders), the only element that will be displayed is the top card text & jump-in reminders. Default is true (enabled).
+	enableGameHistoryGUI = true
+

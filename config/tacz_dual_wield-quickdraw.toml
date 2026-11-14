@@ -1,0 +1,27 @@
+
+#Weapons eligible for Quick Draw. These settings do not change normal dual-wield permissions.
+#By default, only pistols are allowed. Priority: deniedGunIds, allowedGunIds, then weapon types.
+[eligibility]
+	#Allow pistols and revolvers for Quick Draw.
+	allowPistol = true
+	#Allow submachine guns and personal defense weapons for Quick Draw.
+	allowSmg = false
+	#Allow rifles and carbines for Quick Draw.
+	allowRifle = false
+	#Allow shotguns for Quick Draw.
+	allowShotgun = false
+	#Allow sniper rifles and designated marksman rifles for Quick Draw.
+	allowSniper = false
+	#Allow light and heavy machine guns for Quick Draw.
+	allowMachineGun = false
+	#Allow launchers for Quick Draw.
+	allowLauncher = false
+	#Allow weapon types not covered by the categories above.
+	allowOther = false
+	#Additional gun IDs allowed regardless of weapon type. Use gun-pack IDs, not the generic item ID.
+	#Example: ["tacz:glock_17"]
+	allowedGunIds = []
+	#Denied gun IDs. This list takes priority over all allow settings.
+	#Example: ["example:heavy_pistol"]
+	deniedGunIds = []
+

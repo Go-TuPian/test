@@ -1,0 +1,39 @@
+{
+  "version": 3,
+  "focusBlurEnabled": true,
+  "focusBlurStrength": 1.0,
+  "greenPhosphor": {
+    "brightness": 0.6242619,
+    "blackPoint": 0.004,
+    "shadowLift": 0.58,
+    "contrast": 1.0,
+    "highlightCompression": 0.38989848,
+    "noiseDark": 1.0,
+    "noiseBright": 1.0,
+    "noiseSpeed": 1.0,
+    "dither": 1.0,
+    "tintR": 0.075,
+    "tintG": 0.9396802,
+    "tintB": 0.145,
+    "baseR": 0.002,
+    "baseG": 0.006,
+    "baseB": 0.002
+  },
+  "whitePhosphor": {
+    "brightness": 0.401107,
+    "blackPoint": 0.0038745387,
+    "shadowLift": 0.58,
+    "contrast": 1.0,
+    "highlightCompression": 0.35,
+    "noiseDark": 1.0,
+    "noiseBright": 1.0,
+    "noiseSpeed": 1.0,
+    "dither": 1.0,
+    "tintR": 0.38165507,
+    "tintG": 0.95,
+    "tintB": 1.08,
+    "baseR": 0.002,
+    "baseG": 0.004,
+    "baseB": 0.008
+  }
+}

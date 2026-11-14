@@ -1,0 +1,49 @@
+
+["Visual Settings"]
+	#Enable custom rendering functions
+	enableRenderFunc = true
+	#Enable advanced rendering functions by default (attachment: advanced_rendering)
+	enableAdvancedRenderingByDefault = false
+	#Ammo HUD Fadeout Delay (ms)
+	#Range: > -2147483648
+	hudAmmoFadeOut = 0
+	#Enable advanced beam rendering function
+	enableAdvancedBeamRendering = true
+	#Show overheat bar by default (gun: show_overheat_bar)
+	showOverheatBarByDefault = true
+	#Apply model FOV scaling to scopes enabled by the default advanced rendering setting.
+	defaultFovControl = true
+	#Depth gap in model pixels lifting overlapping flush faces of gun, attachment and other TacZ models,
+	#so textures such as camouflage do not flicker where parts share a surface. 0 keeps models unchanged.
+	#Takes effect on the next resource reload.
+	#Range: 0.0 ~ 0.1
+	coplanarFaceSeparation = 0.002
+	#Model resource namespaces eligible for coplanar face separation (exact matches, no wildcards).
+	#Only official TacZ models are enabled by default. An empty list disables separation for all models.
+	#Uses the model ID namespace, not the gun ID or pack folder. Takes effect on the next resource reload.
+	coplanarFaceSeparationNamespaces = ["tacz"]
+
+["Other Settings"]
+	#Show compatibility message on join
+	enableModsCompatibilityCheck = true
+
+["Scope Shader Settings"]
+	#Keep separate shader histories for the main view and magnified scopes to reduce flickering.
+	#Uses additional VRAM. Disable this if you encounter visual glitches or freezes.
+	#Requires a full game restart.
+	enableScopeShaderFlickerFix = true
+	#Preload scope shaders when entering a world or dimension to reduce stuttering when first aiming.
+	#May increase loading time and uses VRAM earlier. Disable this to defer loading until first use.
+	#Requires a full game restart.
+	preloadScopeShaderResources = true
+
+["Paint Editor Settings"]
+	#Paint editor look: WORKSHOP is dark slate with amber accents; TACZ matches TacZ's translucent cream buttons.
+	#Allowed Values: WORKSHOP, TACZ
+	#Allowed Values: WORKSHOP, TACZ
+	paintEditorStyle = "WORKSHOP"
+	#Paint editor position: LEFT takes over TacZ's property-diagram column while painting; RIGHT keeps the diagrams and docks beside the attachment lists.
+	#Allowed Values: LEFT, RIGHT
+	#Allowed Values: LEFT, RIGHT
+	paintEditorLayout = "LEFT"
+

@@ -1,0 +1,63 @@
+
+[audio]
+	#Master client switch for this mod's audio playback.
+	enabled = true
+	#Voice pack used for friendly players (if Conquest is not installed).
+	#Allowed Values: CN, US, RU, COMMON
+	friendlyVoicePack = "CN"
+	#Voice pack used for enemy players (if Conquest is not installed).
+	#Allowed Values: CN, US, RU, COMMON
+	enemyVoicePack = "US"
+	#Whether to play third-person sounds for local player when first-person sound is missing.
+	fallbackThirdPersonForLocal = true
+	#Detect enemy players using vanilla team (isAlliedTo) for voice pack routing, without needing the Conquest mod.
+	detectEnemyByVanillaTeam = true
+	#Ignore the camp/language forced by Conquest and use the friendly/enemy voice pack configs instead.
+	ignoreConquestCamp = false
+	#Master gain multiplier applied to all playback requests.
+	#Range: 0.0 ~ 4.0
+	masterVolume = 1.0
+	#Additional gain multiplier for local first-person sounds.
+	#Range: 0.0 ~ 4.0
+	firstPersonVolume = 1.0
+	#Additional gain multiplier for positional third-person sounds.
+	#Range: 0.0 ~ 4.0
+	thirdPersonVolume = 1.0
+	#Max simultaneous playing instances of a single third-person sound type.
+	#Range: 1 ~ 16
+	maxSimultaneousSingleTpSound = 2
+	#Max simultaneous friendly players that can emit third-person sounds. Prioritized by distance.
+	#Range: 1 ~ 32
+	maxSimultaneousTpPlayersFriendly = 3
+	#Max simultaneous enemy players that can emit third-person sounds. Prioritized by distance.
+	#Range: 1 ~ 32
+	maxSimultaneousTpPlayersEnemy = 3
+	#Maximum third-person attenuation distance used by the base player.
+	#Range: 1.0 ~ 256.0
+	maxThirdPersonDistance = 48.0
+
+[debug]
+	#Whether client debug logs should be printed to logger.
+	enableClientLogging = false
+	#Whether client debug output should also be mirrored to in-game chat.
+	enableClientChat = false
+
+[quickWheel]
+	#Number of custom extension slots for the quick message wheel. Range: 0 ~ 7.
+	#Range: 0 ~ 7
+	extensionCount = 0
+	#Custom text for quick wheel extension slot 1.
+	extensionSlot1 = ""
+	#Custom text for quick wheel extension slot 2.
+	extensionSlot2 = ""
+	#Custom text for quick wheel extension slot 3.
+	extensionSlot3 = ""
+	#Custom text for quick wheel extension slot 4.
+	extensionSlot4 = ""
+	#Custom text for quick wheel extension slot 5.
+	extensionSlot5 = ""
+	#Custom text for quick wheel extension slot 6.
+	extensionSlot6 = ""
+	#Custom text for quick wheel extension slot 7.
+	extensionSlot7 = ""
+

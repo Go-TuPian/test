@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "firstPerson": {
+    "enabled": true,
+    "centerX": 0.5,
+    "centerY": 0.5,
+    "size": 0.155,
+    "innerSize": 0.032,
+    "strength": 1.0
+  },
+  "multiplayerThirdPerson": {
+    "enabled": true,
+    "viewerDistance": 48.0,
+    "beamRange": 20.0,
+    "lightLevel": 13,
+    "lightSize": 0,
+    "sampleSpacing": 3.0,
+    "startDistance": 1.5,
+    "updateIntervalTicks": 2,
+    "maxRemotePlayers": 8,
+    "distanceFalloff": true
+  },
+  "spotlight": {
+    "enabled": true,
+    "shadows": true,
+    "withShaders": false,
+    "localThirdPerson": true,
+    "range": 16.0,
+    "intensity": 2.0,
+    "innerDegrees": 12.0,
+    "outerDegrees": 22.0,
+    "maxLights": 4
+  },
+  "glare": {
+    "enabled": true,
+    "strength": 0.95,
+    "size": 0.9,
+    "maxDistance": 48.0,
+    "halfDistance": 8.0,
+    "innerDegrees": 5.0,
+    "outerDegrees": 50.0
+  }
+}

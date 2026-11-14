@@ -1,0 +1,17 @@
+#侧头角度
+#Range: 0.0 ~ 30.0
+leanAngle = 15.0
+#第三人称侧头角度（摄像机滚转）
+#Range: 0.0 ~ 30.0
+thirdPersonLeanAngle = 15.0
+#是否启用站立时自动侧头
+autoPeekAllowStanding = false
+#是否仅在开镜时触发自动侧头（检测 TACZ 开镜状态）
+autoPeekRequireAim = true
+#是否启用下蹲时触发自动侧头
+autoPeekAllowCrouch = true
+#是否启用同时按下双 Peek 键回正
+dualPeekResets = false
+#探头切换模式，可选值：hold（长按）、toggle（切换）
+peekInputMode = "hold"
+

@@ -1,0 +1,69 @@
+
+#TaCZ Dual Wield common settings
+[eligibility]
+	#Allow guns whose TaCZ index type is smg. This separate switch also updates existing pistol-only configs safely.
+	allowSmg = false
+	#Allow every TaCZ gun type other than the explicitly configured pistol/smg types. Disabled by default.
+	allowOtherGunTypes = false
+	#Additional TaCZ index/guns type values which may be dual-wielded. pistol is enabled by default; smg uses allowSmg.
+	allowedGunTypes = ["pistol"]
+	#Gun IDs which bypass the type check. Example: namespace:gun_id
+	allowedGunIds = []
+	#Gun IDs which are never dual-wielded. Deny has priority over allow.
+	deniedGunIds = ["hamster:coltm1892pair", "applied_armorer:niklas_pistol_double_win_win", "eos:elp_13_t3x2", "eos:eos_m_57cw_t2x2", "sfms:inf_x", "sfms:inf_xj", "emxarms:emx_tknife", "sfms:sword_life", "sfms:trident_dea", "sfms:emergency_baton", "sfms:katana", "sfms:tb23", "ccrp:crow_and_egret"]
+
+[gameplay]
+	#Final procedural camera recoil multiplier for pistol and smg guns while dual-wielding. Other gun types use the fixed 2.0/2.5 heavy tiers. 1.5 means 50% more recoil after attachment, aiming, and crawl modifiers.
+	#Range: 0.0 ~ 10.0
+	dualWieldRecoilMultiplier = 2.0
+
+[firstPerson]
+	#Left gun camera-space X offset. No negative model scale is used.
+	#Range: -2.0 ~ 0.0
+	leftGunXOffset = -0.58
+	#Right gun camera-space X offset while dual-wielding.
+	#Range: 0.0 ~ 2.0
+	rightGunXOffset = 0.18
+
+#Server-side maid quick draw. Uses the Quick Draw sidearm allow/deny list, not the dual-wield type list.
+[maid]
+	#Use independent main/offhand shooting and reload decisions. Disable to restore TLM's main-hand-only attack path.
+	enabled = true
+	#Use main-hand focus ADS only when the target is outside the offhand gun's TLM range but inside the main gun's range. Both guns still reload independently.
+	longRangeFocus = true
+	#Base trigger delay for semi-auto and burst guns, plus 0-4 random ticks. Scaled once by TLM's gun attack-speed attribute. TaCZ's native RPM limit still applies.
+	#Range: 1 ~ 100
+	semiAutoDelayTicks = 10
+	#Trigger polling delay for automatic guns. Scaled by the attack-speed attribute; never bypasses native gun cooldowns.
+	#Range: 1 ~ 100
+	autoDelayTicks = 1
+	#Minimum interval between failed ammo/reload requests per hand. Existing reload and bolt operations continue without a target.
+	#Range: 1 ~ 1200
+	ammoRetryTicks = 20
+
+	[maid.quickDraw]
+		#Enable quick draw for maids using the Gun Attack task. No inventory swaps or free ammunition.
+		enabled = true
+		#AUTO: dual wield when allowed, draw the sidearm when the primary is unavailable. QUICK_DRAW: prefer the sidearm within its range. DUAL: legacy dual-wield AI. Per-maid commands override this default.
+		#Allowed Values: AUTO, DUAL, QUICK_DRAW
+		defaultMode = "AUTO"
+		#Minimum sidearm hold time before returning to a recovered primary. Does not delay safety stops.
+		#Range: 1 ~ 1200
+		minimumHoldTicks = 20
+		#How long the primary must remain ready before the maid returns. Native RPM cooldown is not considered an unavailable primary.
+		#Range: 1 ~ 200
+		returnDelayTicks = 8
+		#AUTO mode: additionally prefer quick draw inside this distance. 0 disables proximity switching.
+		#Range: 0.0 ~ 64.0
+		closeDistance = 0.0
+		#Aim the active sidearm beyond this distance, hip-fire closer targets. Does not block firing while aiming progresses.
+		#Range: 0.0 ~ 128.0
+		adsDistance = 8.0
+		#Prioritize the owner's recently attacked valid target. Respects the maid task, teams, range and line of sight.
+		assistOwner = true
+		#After finishing the owner's target, briefly search behind the maid for a valid hostile and use quick draw. Never attacks allies or ignores TLM targeting rules.
+		rearCover = true
+		#Maximum rear-cover search distance; also limited by the sidearm's native TLM range. Searches are rate-limited.
+		#Range: 1.0 ~ 32.0
+		rearRange = 12.0
+

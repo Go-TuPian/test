@@ -1,0 +1,18 @@
+#侧头按键冷却时间（秒），在冷却内按下的左右侧头都会被忽略，0 为无冷却
+#Range: 0.0 ~ 5.0
+peekIntervalSeconds = 0.0
+#是否在趴下/游泳时禁用Peek
+disablePeekInSwimPose = true
+#是否启用更好的侧头模型
+betterPeekModelEnabled = true
+#是否启用按键探头
+keyPeekEnabled = true
+#单次侧头总时长（秒），从居中到完全侧头所需时间
+#Range: 0.0 ~ 5.0
+peekDurationSeconds = 0.2
+#是否在旁观者模式禁用Peek
+disablePeekInSpectatorMode = true
+#玩家实体侧头偏移格数
+#Range: 0.0 ~ 3.0
+playerLateralOffset = 0.3
+

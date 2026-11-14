@@ -1,0 +1,24 @@
+
+#Client-only held-gun rendering. First-person models and scopes always remain full quality.
+[lod]
+	#OFF: full animated guns for everyone. ALL: simplified third-person guns for everyone. OTHERS: keep your own guns full quality, simplify all other living entities including maids.
+	#Selected targets use the gunpack's LOD model when available; otherwise a static full-model fallback. Gun animation replay is disabled in the simplified draw pass; entity movement and AI remain active.
+	#Allowed Values: OFF, ALL, OTHERS
+	mode = "OFF"
+	#Minimum camera-to-entity distance in blocks before the selected LOD mode applies. 0 applies immediately, even when TaCZ's own LOD distance is larger.
+	#Range: 0.0 ~ 256.0
+	minimumDistance = 0.0
+
+#この端末の第三人称アニメーション設定です。
+[animation]
+	#第三人称で、自分の手と腕を銃のアニメーションへ追従させます。通常モデル・Player Animator・YSM 共通です。
+	#false で追加の腕追従を停止します。銃のアニメーション、Inspect、LOD、Quick Draw の既存動作は変更しません。
+	enableThirdPersonHandTracking = true
+	#第三人称の頭の追従方法です。OFF: 追加追従なし、ADDITIVE: 従来のカメラ回転加算、GUN_GAZE: Inspect・リロード中は銃を注視します。
+	#GUN_GAZE は Inspect・リロード以外では従来の回転を使用します。頭の追従は手の設定から独立しています。Minecraft の画面の揺れが OFF の場合は適用しません。
+	#Allowed Values: OFF, ADDITIVE, GUN_GAZE
+	thirdPersonHeadMode = "GUN_GAZE"
+	#第三人称の Inspect 中、腕が届く範囲で銃を胸元から少し持ち上げます。高い姿勢や通常構えへの復帰では追加量を弱めます。
+	#手と銃が離れないよう、手・腕の追従が有効な場合だけ位置を補正します。false では従来の銃の位置を維持します。
+	enableThirdPersonInspectPresentation = true
+
